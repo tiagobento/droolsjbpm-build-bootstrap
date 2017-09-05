@@ -232,6 +232,8 @@
     <version.org.jboss.forge.roaster>2.19.4.Final</version.org.jboss.forge.roaster>
     <version.org.jboss.spec.javax.enterprise.concurrent>1.0.0.Final</version.org.jboss.spec.javax.enterprise.concurrent>
     <version.org.jboss.spec.javax.websocket>1.0.0.Final</version.org.jboss.spec.javax.websocket>
+    
+    <gwt.module.prefix> </gwt.module.prefix>
   </properties>
 
   <repositories>
@@ -596,6 +598,7 @@
                 <consoleOutput>false</consoleOutput>
                 <logViolationsToConsole>${checkstyle.logViolationsToConsole}</logViolationsToConsole>
                 <failsOnError>false</failsOnError>
+                <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
               </configuration>
             </execution>
           </executions>
